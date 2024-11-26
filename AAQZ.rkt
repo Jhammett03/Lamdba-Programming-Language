@@ -1,9 +1,6 @@
 #lang typed/racket
 (require typed/rackunit)
 
-
-;Fully Implemented
-
 (define-type ExprC (U numC idC appC strC lamC boolC ifC))
 (struct numC ([n : Real]) #:transparent)
 (struct idC ([s : Symbol]) #:transparent)
