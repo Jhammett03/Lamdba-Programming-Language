@@ -1,6 +1,6 @@
-# **AAQZ Language**
+# **Lambda Language**
 
-**AAQZ** is a functional programming language implemented in Typed Racket. It is designed to evaluate expressions with an emphasis on closures, primitives, and abstract syntax. AAQZ features strong typing, robust memory management, and comprehensive error handling.
+**Lambda** is a functional programming language implemented in Typed Racket. It is designed to evaluate expressions with an emphasis on closures, primitives, and abstract syntax. Lambda features strong typing, robust memory management, and comprehensive error handling.
 
 ---
 
@@ -103,11 +103,11 @@ Converts concrete syntax (`Sexp`) into abstract syntax (`ExprC):
 
 # Error Handling
 
-AAQZ includes robust error handling with descriptive messages:
+Lambda includes robust error handling with descriptive messages:
 
-- **Undefined variable:** `"AAQZ: variable undefined, given: ~e"`
-- **Division by zero:** `"AAQZ: Cannot divide by zero given: ~e"`
-- **Invalid function application:** `"AAQZ: Invalid function in application"`
+- **Undefined variable:** `"Lambda: variable undefined, given: ~e"`
+- **Division by zero:** `"Lamdba: Cannot divide by zero given: ~e"`
+- **Invalid function application:** `"Lambda: Invalid function in application"`
 
 ## Example Programs
 
@@ -136,7 +136,7 @@ AAQZ includes robust error handling with descriptive messages:
 
 ## RackUnit Tests
 
-The AAQZ language includes extensive unit tests using RackUnit to ensure reliability. Example:
+The Lambda language includes extensive unit tests using RackUnit to ensure reliability. Example:
 
 ```racket
 (check-equal? (interp (numC 1) topenv topsto) (numV 1))
